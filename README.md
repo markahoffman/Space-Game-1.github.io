@@ -1,1 +1,1 @@
-# Space-Game-1.github.io
+# Space-Game.github.io
