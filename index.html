@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+
+		<title>
+			Menu
+		</title>
+
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js">
+
+		</script>
+
+		<script>
+		
+			function start(){
+
+				sjs.open("target",1200,675);
+
+				var menu_text = new sjs.Text("MENU",50,"yellow");
+
+				menu_text.centerH();
+
+				var button = new sjs.Button("Start Game", function()
+
+					{window.location = "space game level 1.html";
+
+				});
+
+				button.center();
+
+				var text = new sjs.Text("Mark.A.Hoffman",40,"green");
+
+				text.bottom().centerH();
+
+				var how = new sjs.Text("(HOW TO PLAY)<BR>Destroy ships that are smaller than you.<BR>But don't get destroyed by the bigger ships.<BR>When you hit a ship smaller than you you will grow.<BR>Use the arrow keys to move.<BR>If you get the sand that falls from the top of the screen you get bigger for four seconds.<BR>Have Fun!!",25,"blue");
+
+
+
+			}
+
+		</script>
+
+	</head>
+
+	<body onload="start()">
+
+		<h1>
+			Space Game
+		</h1>
+
+		<div id="target" style="margin:auto;background:grey;">
+
+		</div>
+
+	</body>
+
+</html>

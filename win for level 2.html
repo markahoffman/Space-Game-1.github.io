@@ -1,0 +1,63 @@
+<html>
+
+	<head>
+
+		<title>
+
+			You Won leval 1
+
+		</title>
+
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js">
+
+		</script>
+
+		<script>
+		
+			function start(){
+
+				sjs.open("target",1200,675);
+
+				var background = new sjs.Image ("Images/space7.png"); 
+
+				background.setSize (sjs.getWidth(),sjs.getHeight());
+
+				var score_text = new sjs.Text("Score: 0",30,"orange");
+
+				score_text.setText("Score: "+localStorage.getItem("score")); 
+
+				var menu_text = new sjs.Text("You Won Level 2",70,"green");
+
+				menu_text.centerH();
+
+				var button = new sjs.Button("Click Here To Start Level 3", function()
+
+				{window.location = "space game level 3.html";
+
+				});
+
+				button.center();
+
+				var text = new sjs.Text("Mark.A.Hoffman",40,"green");
+
+				text.bottom().centerH();
+
+			}
+
+		</script>
+
+	</head>
+
+	<body onload="start()">
+
+		<h1>
+			Space Game!!!!
+		</h1>
+
+		<div id="target" style="margin:auto;background:grey;">
+
+		</div>
+
+	</body>
+
+</html>
