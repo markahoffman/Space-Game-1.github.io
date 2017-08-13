@@ -30,29 +30,37 @@
 
 				menu_text.centerH();
 
-				var button = new sjs.Button("Click Here To Play level 1", function()
+				var first = new sjs.Button("Click Here To Play level 1", function()
 
 				{window.location = "space game level 1.html";
 
 				});
 
-				var button = new sjs.Button("Click Here To Play level 2", function()
+				first.bottom();
+
+				var second = new sjs.Button("Click Here To Play level 2", function()
 
 				{window.location = "space game level 2.html";
 
 				});
 
-				var button = new sjs.Button("Click Here To Play level 3", function()
+				second.bottom().right();
+
+				var third = new sjs.Button("Click Here To Play level 3", function()
 
 				{window.location = "space game level 3.html";
 
 				});
 
-				var button = new sjs.Button("Click Here To Play level 4", function()
+				third.right();
+
+				var forth = new sjs.Button("Click Here To Play level 4", function()
 
 				{window.location = "space game level 4.html";
 
 				});
+
+				forth.center().left();
 
 				var button = new sjs.Button("Click Here To Play level 5", function()
 
